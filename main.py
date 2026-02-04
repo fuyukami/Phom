@@ -20,7 +20,8 @@ def main(page: ft.Page):
     page.theme_mode = ft.ThemeMode.DARK # Chế độ tối để nổi bật màu Gold
     page.bgcolor = COLOR_BG
     page.padding = 0 # Full màn hình
-    page.horizontal_alignment = ft.CrossAxisAlignment.STRETCH 
+    page.horizontal_alignment = ft.CrossAxisAlignment.STRETCH
+    page.safe_area = True
 
     # --- BIẾN TOÀN CỤC ---
     state = {
@@ -421,3 +422,4 @@ def main(page: ft.Page):
     view_dashboard()
 
 ft.app(target=main)
+
